@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/go_design/go_design",
+    "pages/home_page/home_page",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "M · 宠",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#F6F6F6"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

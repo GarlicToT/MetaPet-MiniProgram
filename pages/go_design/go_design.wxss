@@ -1,0 +1,196 @@
+/* pages/go_design/go_design.wxss */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #171846;
+  }
+  
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  .subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-top: 15px;
+  }
+
+  .input-box {
+    max-width: 190px;
+    height: 30px;
+    padding: 7px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+  }
+  
+  .input-box:focus-within {
+    color: white;
+    outline-color: white;
+    box-shadow: -3px -3px 15px white;
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .small-image {
+    width: 70px;
+    height: 70px;
+    filter: brightness(0) invert(1);
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-117%, -60%);
+    z-index: 1;
+  }
+  
+  .circle {
+    position: absolute;
+    /* bottom: -10px; */
+    bottom: 0;
+    left: calc(50% - 10px);
+    /* left: 10%; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #6071FF;
+    z-index: 0;
+    transform: translate(-100%,40%);
+    box-shadow: 2px 0 4px white;
+  }
+
+  .button {
+    --glow-color: rgb(177, 176, 255);
+    --glow-spread-color: rgba(143, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(211, 206, 255);
+    --btn-color: rgb(75, 61, 136);
+    border: .25em solid var(--glow-color);
+    /* padding: 1em 3em; */
+    color: var(--glow-color);
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+   .parallel-button {
+    --glow-color: rgb(176, 188, 255);
+    --glow-spread-color: rgba(123, 169, 255, 0.781);
+    --enhanced-glow-color: rgb(206, 219, 255);
+    --btn-color: rgb(61, 81, 136);
+    border: .25em solid var(--glow-color);
+    /* padding: 1em 3em; */
+    color: var(--glow-color);
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 .50em .20em var(--glow-color),
+           0 0 .5em .25em var(--glow-spread-color),
+           inset 0 0 .15em .25em var(--glow-color);
+    text-shadow: 0 0 .25em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   
+   .parallel-button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   .parallel-button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   .parallel-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
