@@ -20,16 +20,16 @@
   </view>
 
   <view class="bottom-navigation">
-    <navigator url="/pages/home/home">
+    <navigator url="/pages/home_page/home_page">
       <view class="navigation-item">首页</view>
     </navigator>
-    <navigator url="/pages/shop/shop">
+    <navigator url="/pages/store/store">
       <view class="navigation-item">商城</view>
     </navigator>
     <navigator url="/pages/community/community">
       <view class="navigation-item">社区</view>
     </navigator>
-    <navigator url="/pages/me/me">
+    <navigator url="/pages/mine/mine">
       <view class="navigation-item">我的</view>
     </navigator>
   </view>
