@@ -5,6 +5,9 @@
     "pages/login/login",
     "pages/go_design/go_design",
     "pages/home_page/home_page",
+    "pages/store/store",
+    "pages/community/community",
+    "pages/mine/mine",
     "pages/logs/logs"
   ],
   "window":{

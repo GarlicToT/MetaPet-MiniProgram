@@ -148,3 +148,17 @@ margin-top: 13px;
     border-radius: 15px;
   }  
   
+  .bottom-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .navigation-item {
+    font-size: 14px;
+    color: #000000;
+  }
