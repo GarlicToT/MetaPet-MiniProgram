@@ -13,6 +13,7 @@
       <view class="image-preview"></view>
       <view class="comment-like">
   <!-- <image src="image_left.png" class="like-icon"></image> -->
+  
   <span>10</span>
   <!-- <image src="image_right.png" class="comment-icon"></image> -->
   <span>4</span>
